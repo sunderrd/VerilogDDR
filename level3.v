@@ -93,73 +93,73 @@ always@(posedge clk or negedge rst) begin
             done <= 0;
         end
         13000: begin
-            left <= 0;
-            right <= 1;
+            left <= 1;
+            right <= 0;
             up <= 0;
             down <= 0;
             done <= 0;
         end
         14500: begin
             left <= 0;
-            right <= 0;
-            up <= 1;
+            right <= 1;
+            up <= 0;
             down <= 0;
             done <= 0;
         end
         16000: begin
             left <= 0;
             right <= 0;
+            up <= 0;
+            down <= 1;
+            done <= 0;
+        end
+        16500: begin
+            left <= 0;
+            right <= 0;
             up <= 1;
             down <= 0;
             done <= 0;
         end
-        16500: begin
+        17000: begin
+            left <= 0;
+            right <= 1;
+            up <= 0;
+            down <= 0;
+            done <= 0;
+        end
+        18000: begin
             left <= 0;
             right <= 0;
             up <= 0;
             down <= 1;
             done <= 0;
         end
-        17000: begin
-            left <= 0;
-            right <= 0;
-            up <= 1;
-            down <= 0;
-            done <= 0;
-        end
-        18000: begin
-            left <= 0;
-            right <= 1;
-            up <= 0;
-            down <= 0;
-            done <= 0;
-        end
         20000: begin
-            left <= 0;
-            right <= 1;
+            left <= 1;
+            right <= 0;
             up <= 0;
             down <= 0;
             done <= 0;
         end
         21000: begin
             left <= 0;
-            right <= 0;
-            up <= 1;
+            right <= 1;
+            up <= 0;
             down <= 0;
             done <= 0;
         end
         22500: begin
             left <= 0;
             right <= 0;
-            up <= 1;
-            down <= 0;
+            up <= 0;
+            down <= 1;
             done <= 0;
         end
         23000: begin
-            left <= 1;
+            left <= 0;
             right <= 0;
             up <= 0;
-            down <= 0;
+            down <= 1;
             done <= 0;
         end
         23500: begin
@@ -170,32 +170,32 @@ always@(posedge clk or negedge rst) begin
             done <= 0;
         end
         24000: begin
-            left <= 0;
+            left <= 1;
             right <= 0;
             up <= 0;
-            down <= 1;
+            down <= 0;
             done <= 0;
         end
         25000: begin
             left <= 0;
             right <= 0;
-            up <= 1;
-            down <= 0;
+            up <= 0;
+            down <= 1;
             done <= 0;
         end
         25500: begin
             left <= 0;
-            right <= 0;
+            right <= 1;
             up <= 0;
-            down <= 1;
+            down <= 0;
             done <= 0;
         end
         MAX:
             left <= 0;
             right <= 0;
-            up <= 0;
+            up <= 1;
             down <= 0;
-            done <= 1;
+            done <= 0;
         default: begin
             left <= 0;
             right <= 0;
