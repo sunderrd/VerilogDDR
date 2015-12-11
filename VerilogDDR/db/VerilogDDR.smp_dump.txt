@@ -1,0 +1,35 @@
+
+State Machine - |VerilogDDR|s
+Name s.ERROR s.DISP_SCORE s.PLAY s.L4 s.L3 s.L2 s.L1 s.DISP_MENU 
+s.DISP_MENU 0 0 0 0 0 0 0 0 
+s.L1 0 0 0 0 0 0 1 1 
+s.L2 0 0 0 0 0 1 0 1 
+s.L3 0 0 0 0 1 0 0 1 
+s.L4 0 0 0 1 0 0 0 1 
+s.PLAY 0 0 1 0 0 0 0 1 
+s.DISP_SCORE 0 1 0 0 0 0 0 1 
+s.ERROR 1 0 0 0 0 0 0 1 
+
+State Machine - |VerilogDDR|game:comb_18|column:R|s
+Name s.ST s.WAIT s.GO 
+s.ST 0 0 0 
+s.GO 1 0 1 
+s.WAIT 1 1 0 
+
+State Machine - |VerilogDDR|game:comb_18|column:D|s
+Name s.ST s.WAIT s.GO 
+s.ST 0 0 0 
+s.GO 1 0 1 
+s.WAIT 1 1 0 
+
+State Machine - |VerilogDDR|game:comb_18|column:U|s
+Name s.ST s.WAIT s.GO 
+s.ST 0 0 0 
+s.GO 1 0 1 
+s.WAIT 1 1 0 
+
+State Machine - |VerilogDDR|game:comb_18|column:L|s
+Name s.ST s.WAIT s.GO 
+s.ST 0 0 0 
+s.GO 1 0 1 
+s.WAIT 1 1 0 
